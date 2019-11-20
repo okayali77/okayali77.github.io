@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+	<title>About: Omar Kayali</title>		
+<style>
+	header{
+		text-align: center;
+		background: url('https://i.imgur.com/ornTSai.jpg');	
+		 background-size: cover;
+		
+	}
+	ul{	
+		text-align: center;
+		list-style: none;		
+	}
+	li{ 
+		display: inline; 		
+ 		padding: 0px 10px 0px 10px;	
+	 }
+	a{		
+		color: #544738; 
+		text-decoration: none; 		 		
+ 		font-size: 25px;
+ 		padding: 12px;
+	}
+	p{
+		font-size: 18px;
+	}
+	li a:hover {
+ 		color: #7eb9be;
+		}	
+		img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+     h1 { 
+      color: white;      
+      font-size: 30px;
+    }
+    article {
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    body {     	
+            font-family: nunito, helvetica, sans-serif;
+            background: url('https://i.imgur.com/mfcRtLj.jpg');	
+    }
+</style>
+</head>
+<body>	
+	<header> 	  
+	  <img src="https://i.imgur.com/N6Exlfq.jpg" height="200" width="175"> 
+	    <h1>OMAR KAYALI</h1>
+    </header>
+<ul id="nav">
+ <li><a href="#" onclick="Home(event)">Home</a></li>
+ <li><a href="#" onclick="About(event)">About</a></li>
+ <li><a href="#" onclick="Work(event)">Work</a></li>
+ <li><a href="#" onclick="Contact(event)">Contact</a></li>
+</ul>    
+    <article>    	
+    	<p id="HomeText"><span style="color:#544738;font-size:30px" >Welcome!</span><br> <br> You are at the world renowned Home page of future GA Software Engineer. Never heard of me? No problem, plenty of information about me on this site. Navigate to uncover my epic story.</p>
+    	<p style="display:none;" id="AboutText">Grew up in the Midwest<br>Oldest sibling among four<br>Bachelor in MIS - Iowa State University<br>Master in MBA - University of Iowa<br>Food critic (unoffically)<br>Avid computer gamer<br>Boardgame enthusiast<br>Miniature painter</p>
+    	<p style="display:none;" id="WorkText">Computer Technician - 14 years<br>IT Analyst - 7 years<br>SAP Basis Support - 2 years<br>Network Engineer - 2 years<br>
+    	</p>
+    	<p style="display:none;" id="ContactText"> 
+    	PO Box 568<br>
+    	Davenport, IA<br><br>
+        Cell: 563-505-3261<br><br>        
+        <a href="mailto:omarkayali77@yahoo.com">Email Me</a>
+ 
+    	</p>
+    </article>
+    <script>
+    	function Home(event)
+    	{
+    		document.getElementById("HomeText").style.display = "block";
+    		document.getElementById("AboutText").style.display = "none";
+    		document.getElementById("WorkText").style.display = "none";
+    		document.getElementById("ContactText").style.display = "none";
+    	}
+    	function About(event)
+    	{
+    		document.getElementById("AboutText").style.display = "block";
+    		document.getElementById("HomeText").style.display = "none";
+    		document.getElementById("WorkText").style.display = "none";
+    		document.getElementById("ContactText").style.display = "none";
+    	}
+    	function Work(event) {
+    		document.getElementById("WorkText").style.display = "block";
+    		document.getElementById("AboutText").style.display = "none";
+    		document.getElementById("HomeText").style.display = "none";   	
+    		document.getElementById("ContactText").style.display = "none";
+    	}
+    	function Contact(event) {
+    		document.getElementById("ContactText").style.display = "block";
+    		document.getElementById("AboutText").style.display = "none";
+    		document.getElementById("HomeText").style.display = "none";   	
+    		document.getElementById("WorkText").style.display = "none";
+    	}
+    </script>
+</body>
